@@ -1,0 +1,381 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    color: black;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    color: black;
+}
+
+p {
+    font-family: 'Montserrat', sans-serif; /* Aplica a fonte Montserrat */
+    font-weight: 300;
+    line-height: 1.5; /* Espaçamento entre linhas */
+    margin-bottom: 1em; /* Espaçamento entre parágrafos */
+    color: black;
+}
+
+.linha-home {
+    background-color:black;
+    color: white;
+    text-align: center;
+    padding: 0px 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    width: 100%;
+    top:0;
+    z-index: 100; /* Para garantir que a tarja fique acima de outros elementos */
+}
+
+header {
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    font-family: 'Montserra', sans-serif;
+    font-weight: 300;    
+}
+
+header h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    font-weight: 300;
+    color: black;
+}
+
+header a {
+    color: black; /* Cor do texto dos links */
+    text-decoration:none; /* Remove o sublinhado dos links */
+    font-family: 'Montserrat', sans-serif; /* Mesma fonte que o header */
+    margin: 0 15px; /* Espaço entre os links */
+    font-size: 15px; /* Tamanho da fonte dos links, ajuste conforme necessário */
+    
+}
+
+a:hover {
+    color: black !important; /* Cor do texto dos links */ 
+}
+
+.separator {
+    border: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1); /* Linha sutil */
+    margin: 0; /* Remove margens padrão */
+    padding: 5px; /* Remove padding padrão */
+}
+
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto; /* A seção ocupará toda a altura da viewport */
+    overflow: hidden;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    padding-top: 60px;
+}
+
+.video-container {
+    width: 100%;
+    height: auto;
+}
+
+.video-bg {
+    width: 100%;
+    object-fit: cover; /* Cobrirá toda a área da viewport */
+    position: relative;
+}
+
+.video-first,.video-second {
+    height: auto; /* Ajusta a altura do primeiro vídeo */
+    max-height: 90vh;
+}
+
+/* Para telas menores */
+@media (max-width: 768px) {
+    .video-first, .video-second {
+        height: auto; /* Ajuste para telas menores */
+        max-height: 50vh;
+    }
+}
+
+.agua-aromatica {
+    background-color:  white;
+    text-align: center;
+    justify-items: center;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto; 
+}
+
+.features, .contact { 
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.features h2, .about h2, .contact h2, .testimonials h2, .agua-aromatica h2, .newsletter h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    font-weight: 300; /* Define a espessura da fonte */
+    margin-bottom: 50px; /* Adiciona 50 pixels de espaço abaixo */
+    color: black;
+}
+
+.about h2, .agua-aromatica h2{
+    margin-top: 50px;
+}
+
+.feature {
+    margin: 40px 0;
+    width: 100%;
+    margin: 0 auto; /* Centraliza horizontalmente */
+}
+
+.feature h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: black;
+}
+
+.about {
+    text-align: center;
+    background-color: white;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.about p, .agua-aromatica p {
+    margin-bottom: 50px;
+    color: black;  
+    width: 100%;
+}
+
+
+
+
+.square-container {
+    display: flex; 
+    width: calc(50% + 25vw); /* Aumenta a largura conforme a tela diminui */
+    max-width: 600px; /* Define a largura máxima */
+    height: auto; /* Mantém a altura proporcional */
+    overflow: hidden;
+    transition: width 0.3s ease-in-out, max-width 0.3s ease-in-out;
+}
+
+.full-width-row {
+    justify-content: center;
+    align-items: normal;  /* Centraliza a .square-container verticalmente */
+    margin: 0 auto; /* Centraliza horizontalmente */
+    box-sizing: border-box;    
+}
+
+.col {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    padding: 10px;
+}
+
+.col-1 {
+    display: flex;
+    flex-direction: column; /* Organiza imagem e texto em coluna */
+    text-align: center;
+    width: 100%;
+}
+
+.col-2 {
+    display: flex;
+    flex-direction: column; /* Organiza imagem e texto em coluna */
+    text-align: center;
+    align-items: flex-start;
+}
+
+.col-2 p {
+    font-size: 12px;
+    font-weight: 300;
+    margin-bottom: auto;
+    color: black !important;
+}
+
+.col-2 h2 {
+    width: 100%;
+    font-family: 'montserrat' , sans-serif;
+    font-weight: 300;
+    font-size: 25px;
+    color: black;
+    margin-top: 10px;
+    margin-bottom: 5px !important;
+    text-align: right;
+}
+
+.image {
+    max-width: 100%;
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+.text {
+    margin-top: 12px;
+    text-align: right;
+}
+
+.cta-button-link {
+    display: block;
+    background-color:#535353;
+    color: white; 
+    border-radius: 20px; 
+   
+    cursor: pointer;
+    text-decoration: none !important; 
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    text-align: center;
+    width: 100%;
+    padding: 5px; 
+    transition: background-color 0.3s ease, color 0.3s ease; 
+}
+
+.cta-button-link:hover {
+    background-color: black; 
+    color: white !important;
+}
+
+.cta-button-link i {
+    font-size: 12px; /* Define o tamanho do ícone */
+    margin-right: 8px; /* Espaço entre o ícone e o texto */
+    vertical-align: 1px; /* Alinha o ícone com o texto */
+    color: transparent;
+    -webkit-text-stroke: 0.5px white; /* Adiciona contorno */
+}
+
+
+@media (max-width: 768px) {
+    .square-container {
+        width: 100%; /* Ocupa 100% da .full-width-row */
+        max-width: 100%; /* Ajusta a largura para 100% */
+        flex-direction: column; /* Organiza as colunas em uma única coluna vertical */  
+    }
+
+    .col-md-6.col-1, 
+    .col-md-6.col-2 {
+        width: 100%; /* Colunas ocupam 100% da .square-container */
+        max-width: 100%; /* Garante que cada coluna ocupe 100% da largura disponível */
+        margin-top: 10px;
+    }
+
+    .col-md-6.col-1 {
+        order: 1; /* Mantém a primeira coluna */
+    }
+
+    .col-md-6.col-2 {
+        order: 2; /* Garante que esta coluna apareça depois da col-1 */
+    }
+
+    .col-2 p {
+        font-size: 12px;
+        margin-bottom: auto;
+        color: black;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .col-2 h2{
+        font-family: 'montserrat' , sans-serif;
+        font-size: 25px;
+        color: black;
+        margin-top: 20px;
+        margin-bottom: none;
+        text-align: center;  
+    }
+
+    .cta-button-link {
+        display: block;
+        background-color: #535353;
+        color: white;
+        border-radius: 20px; 
+        cursor: pointer;
+        text-decoration: none; /* Remove a sublinha padrão */
+        font-family: 'Montserrat', sans-serif;
+        font-size: 14px;
+        font-weight: 300;
+        text-align: center;
+        width: 100%;
+        padding: 5px 20px; /* Adiciona espaço interno */
+        box-sizing: border-box; /* Garante que o padding seja incluído no tamanho total do botão */
+        transition: background-color 0.3s ease, color 0.3s ease; /* Transições suaves para hover */
+    }
+    
+    .cta-button-link:hover {
+        background-color: black; /* Muda a cor de fundo ao passar o mouse */
+        color: white; /* Muda a cor do texto ao passar o mouse */
+    }
+}
+
+
+
+.testimonials {
+    background-color: white;
+    padding: 50px 20px;
+    text-align: center;
+    width: 100%;
+    margin: 0 auto; /* Centraliza horizontalmente */
+}
+
+.testimonials h4 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 300; /* Define a espessura da fonte */
+    margin-bottom: 50px; /* Adiciona 50 pixels de espaço abaixo */
+    color: black;
+}
+
+.newsletter {
+    background-color: #f4f4f4;
+    color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.newsletter h3{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: black;
+}
+
+.additional-info, .contact-info {
+    margin-top: 20px;
+    color: black;
+}
+
+.cta-button-site{
+    color: black;
+}
+
+footer {
+    padding: 10px 20px;
+    margin: 0;
+    font-size: 14px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    max-height: 100px;
+    overflow: hidden;
+  }
+
+footer p {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+}

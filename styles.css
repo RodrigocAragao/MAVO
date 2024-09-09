@@ -36,7 +36,7 @@ p {
     z-index: 100; /* Para garantir que a tarja fique acima de outros elementos */
 }
 
-header {
+.header {
     color: white;
     padding: 10px 0;
     text-align: center;
@@ -44,14 +44,13 @@ header {
     font-weight: 300;    
 }
 
-header h1 {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 30px;
-    font-weight: 300;
-    color: black;
+.header img {
+    margin-bottom: 10px; /* Espaçamento entre a imagem e o texto */
+    width: 100px; /* Define a largura da imagem */
+    height: auto; /* Mantém a proporção */
 }
 
-header a {
+.header a {
     color: black; /* Cor do texto dos links */
     text-decoration:none; /* Remove o sublinhado dos links */
     font-family: 'Montserrat', sans-serif; /* Mesma fonte que o header */

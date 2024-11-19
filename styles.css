@@ -120,7 +120,7 @@ a:hover {
     text-align: center;
 }
 
-.features h2, .about h2, .contact h2, .testimonials h2, .agua-aromatica h2, .newsletter h2 {
+.features h2, .about h2, .contact h2, .testimonials h2, .agua-aromatica h2, .newsletter h2, .atributos-section h2 {
     font-family: 'Montserrat', sans-serif;
     font-size: 25px;
     font-weight: 300; /* Define a espessura da fonte */
@@ -320,7 +320,52 @@ a:hover {
     }
 }
 
+.atributos-section {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #fff;
+}
 
+
+.atributos-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.atributo {
+    background-color: #fff;
+    padding: 20px;
+    /* border-radius: 8px; */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.atributo img {
+    width: 72px;
+    height: 72px;
+    margin-bottom: 15px;
+}
+
+.atributo h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #666;
+}
+
+.atributo p {
+    font-size: 0.95rem;
+    color: #666;
+    line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+    .atributos-container {
+        grid-template-columns: 1fr;
+    }
+}
 
 .testimonials {
     background-color: white;
@@ -345,7 +390,7 @@ a:hover {
     text-align: center;
 }
 
-.newsletter h3{
+.newsletter h3 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 300;
     font-size: 16px;
@@ -362,19 +407,52 @@ a:hover {
     color: black;
 }
 
-footer {
-    padding: 10px 20px;
-    margin: 0;
-    font-size: 14px;
-    background-color: black;
-    color: #fff;
-    text-align: center;
-    max-height: 100px;
-    overflow: hidden;
-  }
+.footer {
+    background-color: white;
+    padding: 40px 0;
+    color: #333;
+}
 
-footer p {
-    margin: 0;
-    font-family: 'Montserrat', sans-serif;
-    color: white;
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-sections {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.footer-sections h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.payment-methods img,
+.social-media img {
+    width: 40px;
+    margin-right: 10px;
+}
+
+.social-media a {
+    display: inline-block;
+}
+
+.contact-info p {
+    margin: 5px 0;
+}
+
+.footer-bottom {
+    text-align: center;
+    font-size: 14px;
+    color: #666;
+    background-color: white ;
+}
+
+.footer-bottom p {
+    margin: 5px 0;
 }
